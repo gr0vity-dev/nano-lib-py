@@ -1,5 +1,5 @@
 """
-nanolib.units
+nano_lib_py.units
 ~~~~~~~~~~~~~
 
 Methods for converting between different NANO denominations.
@@ -39,7 +39,7 @@ Or in other words:
     Consider storing all NANO values as integers using the `raw` denomination
     and only converting the value to another denomination
     when presenting a human-readable amount.
-    `nanolib` uses Python's Decimal library and increases
+    `nano_lib_py` uses Python's Decimal library and increases
     precision on startup to account for precision loss.
     This precision can be changed during runtime by another library.
 

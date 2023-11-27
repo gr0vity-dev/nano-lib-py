@@ -1,5 +1,5 @@
 """
-nanolib.accounts
+nano_lib_py.accounts
 ~~~~~~~~~~~~~~~~
 
 Methods for creating keys and IDs for NANO accounts and dealing with
@@ -209,7 +209,7 @@ def get_account_id(*, public_key=None, private_key=None, prefix=None):
 
      Usage::
 
-      >>> from nanolib.accounts import get_account_id, AccountIDPrefix
+      >>> from nano_lib_py.accounts import get_account_id, AccountIDPrefix
       >>> get_account_id(private_key="2"*64)
       'xrb_1iwamgozb5ckj9zzojbnb79485dfiw8jegedzwzuzy5b4a19cbs8b4tsdzo3'
       >>> get_account_id(public_key="2"*64)
@@ -246,7 +246,7 @@ def get_account_id(*, public_key=None, private_key=None, prefix=None):
         return _from_public_key(public_key=public_key, prefix=prefix)
 
     if not prefix:
-        prefix = AccountIDPrefix.XRB
+        prefix = AccountIDPrefix.NANO
     try:
         prefix = AccountIDPrefix(prefix)
     except ValueError:

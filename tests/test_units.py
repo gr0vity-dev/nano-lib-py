@@ -1,7 +1,7 @@
 from decimal import Decimal, Inexact
 
 import pytest
-from nanolib.units import convert, NanoDenomination
+from nano_lib_py.units import convert, NanoDenomination
 
 
 def test_floats_not_allowed():

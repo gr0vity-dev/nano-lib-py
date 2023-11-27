@@ -1,9 +1,9 @@
-.. nanolib documentation master file, created by
+.. nano_lib_py documentation master file, created by
    sphinx-quickstart on Sun Jan  6 14:58:17 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to nanolib's documentation!
+Welcome to nano_lib_py's documentation!
 ===============================================
 
 .. toctree::

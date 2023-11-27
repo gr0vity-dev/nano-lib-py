@@ -2,10 +2,10 @@ import time
 from hashlib import blake2b
 
 import pytest
-from nanolib.exceptions import (InvalidDifficulty, InvalidMultiplier,
+from nano_lib_py.exceptions import (InvalidDifficulty, InvalidMultiplier,
                                 InvalidWork, InvalidBlockHash)
-from nanolib.util import dec_to_hex
-from nanolib.work import (derive_work_difficulty, derive_work_multiplier,
+from nano_lib_py.util import dec_to_hex
+from nano_lib_py.work import (derive_work_difficulty, derive_work_multiplier,
                           parse_difficulty, parse_work, get_work_value,
                           solve_work, validate_difficulty, validate_work)
 
@@ -18,14 +18,14 @@ def test_low_difficulty_used_for_tests():
     """
     Check that a lower work difficulty is used for tests
     """
-    from nanolib.work import WORK_DIFFICULTY
+    from nano_lib_py.work import WORK_DIFFICULTY
 
     assert int(WORK_DIFFICULTY, 16) < int("ffffffc000000000", 16)
 
 
 def test_parse_work():
     """
-    Test nanolib.parse_work
+    Test nano_lib_py.parse_work
     """
     with pytest.raises(InvalidWork):
         # Work has to be 16 chars long

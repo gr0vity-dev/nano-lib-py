@@ -1,14 +1,14 @@
 import pytest
 
-from nanolib.exceptions import (
+from nano_lib_py.exceptions import (
     InvalidSeed, InvalidPrivateKey, InvalidPublicKey, InvalidAccount)
-from nanolib.accounts import (
+from nano_lib_py.accounts import (
     AccountIDPrefix, get_account_key_pair, get_account_id,
     get_account_public_key, generate_account_private_key,
     generate_account_key_pair, generate_account_id, generate_seed,
     is_account_id_valid
 )
-from nanolib.util import is_hex
+from nano_lib_py.util import is_hex
 
 
 SEED = "bba817a4fa1418e10d014c99055c4922afa0f84b324e7850baf4b3b8b6af1a5b"
@@ -74,7 +74,7 @@ def test_generate_account_key_pair():
 
 def test_get_account_id():
     """
-    Test nanolib.accounts.get_account_id
+    Test nano_lib_py.accounts.get_account_id
     """
     # From PUBLIC KEY
     with pytest.raises(InvalidPublicKey):
@@ -126,7 +126,7 @@ def test_get_account_id():
 
 def test_get_account_public_key():
     """
-    Test nanolib.accounts.get_account_public_key
+    Test nano_lib_py.accounts.get_account_public_key
     """
     # From ACCOUNT ID
     with pytest.raises(InvalidAccount):

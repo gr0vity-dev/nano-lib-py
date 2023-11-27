@@ -1,14 +1,13 @@
-include MANIFEST.in LICENSE versioneer.py *.md
-include src/nanolib-work-module/work.c
+include src/nano_lib_py-work-module/work.c
 
-graft src/nanolib
-graft src/nanolib-work-module/BLAKE2/ref
-graft src/nanolib-work-module/BLAKE2/sse
-graft src/nanolib-work-module/BLAKE2/neon
-graft src/nanolib-nbase32-module
+graft src/nano_lib_py
+graft src/nano_lib_py-work-module/BLAKE2/ref
+graft src/nano_lib_py-work-module/BLAKE2/sse
+graft src/nano_lib_py-work-module/BLAKE2/neon
+graft src/nano_lib_py-nbase32-module
 
 exclude tox.ini requirements_dev.txt *.yml
-exclude src/nanolib-work-module/README.md
+exclude src/nano_lib_py-work-module/README.md
 
 prune docs
 prune tests

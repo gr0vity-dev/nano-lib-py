@@ -1,10 +1,9 @@
-nanolib
+nano_lib_py
 =======
 
-[![image](https://img.shields.io/pypi/v/nanolib.svg)](https://pypi.org/project/nanolib/)
-[![codecov](https://codecov.io/gh/Matoking/nanolib/branch/master/graph/badge.svg)](https://codecov.io/gh/Matoking/nanolib)
-[![Build Status](https://travis-ci.com/Matoking/nanolib.png?branch=master)](https://travis-ci.com/Matoking/nanolib)
-[![image](https://readthedocs.org/projects/nanolib/badge/?version=latest)](https://nanolib.readthedocs.io/en/latest/?badge=latest)
+Forked from https://github.com/Matoking/nanolib
+
+Modifications : make it compatible with arm64 (macos m1/m2)
 
 
 A set of tools for handling functions related to the NANO cryptocurrency protocol.
@@ -27,10 +26,10 @@ Installation
 You can install the library using pip:
 
 ```
-pip install nanolib
+pip install nano_lib_py
 ```
 
-nanolib requires a working build environment for the C extensions. For example, on Debian-based distros you can install the required Python header files and a C compiler using the following command:
+nano_lib_py requires a working build environment for the C extensions. For example, on Debian-based distros you can install the required Python header files and a C compiler using the following command:
 
 ```
 apt install build-essential python3-dev
@@ -39,7 +38,7 @@ apt install build-essential python3-dev
 Documentation
 =============
 
-An online copy of the documentation can be found at [Read the Docs](https://nanolib.readthedocs.io/en/latest/).
+An online copy of the documentation can be found at [Read the Docs](https://nano_lib_py.readthedocs.io/en/latest/).
 
 You can also build the documentation yourself by running `python setup.py build_sphinx`.
 

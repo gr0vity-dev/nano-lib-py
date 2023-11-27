@@ -1,5 +1,5 @@
 """
-nanolib.util
+nano_lib_py.util
 ~~~~~~~~~~~~
 
 Functions for working with the variant of Base32 encoding
@@ -8,7 +8,7 @@ functions
 """
 import binascii
 
-import nanolib._nbase32
+import nano_lib_py._nbase32
 
 __all__ = (
     "dec_to_hex", "is_hex", "nbase32_to_bytes", "bytes_to_nbase32"
@@ -28,7 +28,7 @@ def nbase32_to_bytes(nbase32):
     :return: Decoded bytes
     :rtype: bytes
     """
-    return nanolib._nbase32.nbase32_to_bytes(bytes(nbase32, "utf-8"))
+    return nano_lib_py._nbase32.nbase32_to_bytes(bytes(nbase32, "utf-8"))
 
 
 def bytes_to_nbase32(b):
@@ -39,7 +39,7 @@ def bytes_to_nbase32(b):
     :return: Encoded Nano Base32 string
     :rtype: str
     """
-    return nanolib._nbase32.bytes_to_nbase32(b).decode("utf-8")
+    return nano_lib_py._nbase32.bytes_to_nbase32(b).decode("utf-8")
 
 
 def is_hex(h):

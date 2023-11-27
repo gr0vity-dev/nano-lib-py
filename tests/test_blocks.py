@@ -5,11 +5,11 @@ import json
 
 from tests.data import BLOCKS
 
-from nanolib.blocks import Block, MAX_BALANCE
-from nanolib.exceptions import (
+from nano_lib_py.blocks import Block, MAX_BALANCE
+from nano_lib_py.exceptions import (
     InvalidAccount, InvalidBlock, InvalidSignature, InvalidWork,
     InvalidBlockHash, InvalidBalance, InvalidPublicKey, InvalidDifficulty)
-from nanolib.util import is_hex
+from nano_lib_py.util import is_hex
 
 
 VALID_ACCOUNT_ID = \

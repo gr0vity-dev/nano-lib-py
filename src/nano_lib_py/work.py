@@ -22,16 +22,17 @@ from .util import dec_to_hex, is_hex
 
 # TODO: Maybe run a short benchmark when running solve_work() for the first
 #       time?
-_cpu_flags = cpuinfo.get_cpu_info()["flags"]
+_hash_flags = "flags" in cpuinfo.get_cpu_info()
+_cpu_flags = cpuinfo.get_cpu_info()["flags"] if _hash_flags else []
 _cpu_flags_by_priority = ("avx", "sse4_1", "ssse3", "sse2", "neon", "ref")
 
 for cpu_flag in _cpu_flags_by_priority:
     if cpu_flag == "ref":
-        _work = importlib.import_module("nanolib._work_ref")
+        _work = importlib.import_module("nano_lib_py._work_ref")
         break
     elif cpu_flag in _cpu_flags:
         _work = importlib.import_module(
-            "nanolib._work_{}".format(cpu_flag)
+            "nano_lib_py._work_{}".format(cpu_flag)
         )
         break
 
@@ -54,7 +55,7 @@ def parse_work(work):
 
     .. note:: This method only checks that the work's format is correct.
               To validate a proof-of-work,
-              use :func:`nanolib.work.validate_work`
+              use :func:`nano_lib_py.work.validate_work`
 
     :param str work: Work as a 16-character hex string
     :raises InvalidWork: If the work is invalid
@@ -88,7 +89,7 @@ def get_work_value(block_hash, work, as_hex=False):
     :rtype: int or str
     """
     # Import is deferred to avoid a circular import
-    from nanolib.blocks import validate_block_hash
+    from nano_lib_py.blocks import validate_block_hash
 
     validate_block_hash(block_hash)
     parse_work(work)

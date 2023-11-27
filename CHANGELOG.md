@@ -33,8 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Add support for Windows (x86 and x86-64) using the MSVC compiler.
  - Add support for Linux (ARM) using the GCC compiler.
  - Add support for the NEON instruction set on ARM for better performance when generating PoW.
- - Add `nanolib.accounts.validate_seed` function for validating seeds.
- - Add `nanolib.work.validate_difficulty`, `nanolib.work.get_work_value`, `nanolib.work.derive_work_difficulty` and `nanolib.work.derive_work_multiplier` functions to help with dynamic PoW difficulty.
+ - Add `nano_lib_py.accounts.validate_seed` function for validating seeds.
+ - Add `nano_lib_py.work.validate_difficulty`, `nano_lib_py.work.get_work_value`, `nano_lib_py.work.derive_work_difficulty` and `nano_lib_py.work.derive_work_multiplier` functions to help with dynamic PoW difficulty.
  - Add `Block.difficulty` property to adjust the required work difficulty on a per-block basis.
  - Add `Block.work_value` property to get the value of the included work.
 
@@ -50,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - `Block.has_valid_work` and `Block.has_valid_signature` properties are cached to prevent redundant work.
 
 ### Changed
- - PyPI package `pynanocurrency` and module `nanocurrency` have both been renamed to `nanolib`.
+ - PyPI package `pynanocurrency` and module `nanocurrency` have both been renamed to `nano_lib_py`.
  - Improved performance when encoding or decoding account IDs.
 
 ### Fixed
@@ -60,10 +60,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/Matoking/nanolib/compare/0.4.3...HEAD
-[0.4.3]: https://github.com/Matoking/nanolib/compare/0.4.2...0.4.3
-[0.4.2]: https://github.com/Matoking/nanolib/compare/0.4.1...0.4.2
-[0.4.1]: https://github.com/Matoking/nanolib/compare/0.4...0.4.1
-[0.4]: https://github.com/Matoking/nanolib/compare/0.3...0.4
-[0.3]: https://github.com/Matoking/nanolib/compare/0.2...0.3
-[0.2]: https://github.com/Matoking/nanolib/compare/0.1...0.2
+[Unreleased]: https://github.com/Matoking/nano_lib_py/compare/0.4.3...HEAD
+[0.4.3]: https://github.com/Matoking/nano_lib_py/compare/0.4.2...0.4.3
+[0.4.2]: https://github.com/Matoking/nano_lib_py/compare/0.4.1...0.4.2
+[0.4.1]: https://github.com/Matoking/nano_lib_py/compare/0.4...0.4.1
+[0.4]: https://github.com/Matoking/nano_lib_py/compare/0.3...0.4
+[0.3]: https://github.com/Matoking/nano_lib_py/compare/0.2...0.3
+[0.2]: https://github.com/Matoking/nano_lib_py/compare/0.1...0.2

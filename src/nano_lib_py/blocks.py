@@ -1,5 +1,5 @@
 """
-nanolib.blocks
+nano_lib_py.blocks
 ~~~~~~~~~~~~~~
 
 Methods to work with NANO blocks and a :class:`Block` class to construct
@@ -557,7 +557,7 @@ class Block(object):
         .. note::
 
            This method assumes that NANO mainnet difficulty is used. In any
-           other case use :meth:`nanolib.blocks.Block.verify_work`
+           other case use :meth:`nano_lib_py.blocks.Block.verify_work`
            instead.
 
         :return: True if the block has valid work that meets the difficulty, \
@@ -595,8 +595,8 @@ class Block(object):
         """BLAKE2b hash that requires a valid PoW
 
         For open blocks this is the public key derived from
-        :attr:`nanolib.blocks.Block.account`. For other types of blocks,
-        :attr:`nanolib.blocks.Block.previous` is used as the hash.
+        :attr:`nano_lib_py.blocks.Block.account`. For other types of blocks,
+        :attr:`nano_lib_py.blocks.Block.previous` is used as the hash.
 
         :return: BLAKE2b hash used to generate a PoW
         :rtype: str
@@ -616,7 +616,7 @@ class Block(object):
     @property
     def work_value(self):
         """The work value attached to this block. The value must be equal to
-        or higher than :attr:`nanolib.blocks.Block.difficulty`
+        or higher than :attr:`nano_lib_py.blocks.Block.difficulty`
         in order to be valid.
 
         :return: 64-bit integer or None if this block doesn't include work

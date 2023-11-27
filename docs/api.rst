@@ -5,29 +5,29 @@ API
 Accounts
 ========
 
-.. automodule:: nanolib.accounts
+.. automodule:: nano_lib_py.accounts
    :members:
 
 Blocks
 ======
 
-.. automodule:: nanolib.blocks
+.. automodule:: nano_lib_py.blocks
    :members:
 
 Proof-of-work
 =============
 
-.. automodule:: nanolib.work
+.. automodule:: nano_lib_py.work
    :members:
 
 Units
 =====
 
-.. automodule:: nanolib.units
+.. automodule:: nano_lib_py.units
    :members:
 
 Exceptions
 ==========
 
-.. automodule:: nanolib.exceptions
+.. automodule:: nano_lib_py.exceptions
    :members:

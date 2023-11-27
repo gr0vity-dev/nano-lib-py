@@ -1,6 +1,6 @@
 import pytest
 
-from nanolib.util import nbase32_to_bytes, bytes_to_nbase32, is_hex
+from nano_lib_py.util import nbase32_to_bytes, bytes_to_nbase32, is_hex
 
 
 def test_nbase32_to_bytes():
