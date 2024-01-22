@@ -23,7 +23,7 @@ REQUIRES_PYTHON = '>=3.6.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'ed25519-blake2b>=1.4', 'py-cpuinfo>=4'
+    'py-ed25519-blake2b==0.0.1', 'py-cpuinfo>=4'
 ]
 
 
@@ -92,7 +92,7 @@ _is_unix_compiler = get_default_compiler() == "unix"
 
 # https://stackoverflow.com/a/45125525
 _is_arm = _machine.startswith("arm")
-_is_arm64 = _machine.startswith("arm64") #macos m2
+_is_arm64 = _machine.startswith("arm64")  # macos m2
 _is_aarch64 = _machine.startswith("aarch64")
 # 'AMD64' only appears on Windows
 _is_x86 = _machine.startswith("x86") or _machine in ("i386", "i686", "AMD64")
@@ -145,7 +145,7 @@ EXTENSIONS_TO_BUILD.append(
 # Where the magic happens:
 setup(
     name=NAME,
-    version='0.5.1',
+    version='0.5.2',
     description=DESCRIPTION,
     # long_description=long_description,
     author=AUTHOR,
