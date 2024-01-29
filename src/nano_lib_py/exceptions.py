@@ -1,4 +1,4 @@
-from ed25519_blake2b import BadSignatureError
+from py_ed25519_blake2b import BadSignatureError
 
 
 __all__ = (

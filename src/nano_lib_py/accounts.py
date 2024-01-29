@@ -15,7 +15,7 @@ import random
 import re
 import enum
 
-from ed25519_blake2b import SigningKey
+from py_ed25519_blake2b import SigningKey
 
 from .exceptions import (
     InvalidSeed, InvalidAccount, InvalidPublicKey, InvalidPrivateKey

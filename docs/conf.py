@@ -19,8 +19,6 @@ sys.path.insert(0, os.path.abspath(
     os.path.join('..', 'src', 'nano_lib_py')
 ))
 
-import nano_lib_py
-
 
 # -- Project information -----------------------------------------------------
 
@@ -30,11 +28,6 @@ author = 'Janne Pulkkinen'
 
 # The code is under CC0, so showing the footer doesn't make a lot of sense
 html_show_copyright = False
-
-# The short X.Y version
-version = nano_lib_py.__version__
-# The full version, including alpha/beta/rc tags
-release = nano_lib_py.__version__
 
 
 # -- General configuration ---------------------------------------------------

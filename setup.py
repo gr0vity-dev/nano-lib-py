@@ -23,7 +23,8 @@ REQUIRES_PYTHON = '>=3.6.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'py-ed25519-blake2b==0.0.1', 'py-cpuinfo>=4'
+    'py-ed25519-blake2b>=0.1.0',
+    'py-cpuinfo>=4'
 ]
 
 
@@ -145,7 +146,7 @@ EXTENSIONS_TO_BUILD.append(
 # Where the magic happens:
 setup(
     name=NAME,
-    version='0.5.2',
+    version='0.5.4',
     description=DESCRIPTION,
     # long_description=long_description,
     author=AUTHOR,
@@ -170,6 +171,9 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Programming Language :: Python :: Implementation :: CPython',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX :: Linux',

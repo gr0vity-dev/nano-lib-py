@@ -12,8 +12,3 @@ from .exceptions import *
 from .units import *
 from .work import *
 from .util import *
-
-
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions

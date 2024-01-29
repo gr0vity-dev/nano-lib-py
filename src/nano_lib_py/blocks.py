@@ -11,7 +11,7 @@ from functools import wraps
 from hashlib import blake2b
 from json import dumps, loads
 
-from ed25519_blake2b import BadSignatureError, SigningKey, VerifyingKey
+from py_ed25519_blake2b import BadSignatureError, SigningKey, VerifyingKey
 
 from .accounts import (get_account_id, get_account_public_key,
                        validate_account_id, validate_private_key,
